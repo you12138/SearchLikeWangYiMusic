@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KeyWordTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tya-C3-WfD">
+                        <rect key="frame" x="8" y="10" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Akd-fT-xP8"/>
+                        </constraints>
+                        <state key="normal" image="搜索 (1).png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reQ-68-bGt">
+                        <rect key="frame" x="36" y="11" width="276" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.01343152144" green="0.074278236040000001" blue="0.058895512140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Tya-C3-WfD" secondAttribute="bottom" constant="3" id="BO2-2K-i9f"/>
+                    <constraint firstItem="reQ-68-bGt" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="DDK-YU-hWS"/>
+                    <constraint firstItem="reQ-68-bGt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="N8B-ar-kps"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="reQ-68-bGt" secondAttribute="bottom" constant="3" id="Ovb-Jd-a1m"/>
+                    <constraint firstItem="Tya-C3-WfD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="gPd-RX-omP"/>
+                    <constraint firstItem="reQ-68-bGt" firstAttribute="leading" secondItem="Tya-C3-WfD" secondAttribute="trailing" constant="8" id="l7d-kT-Vcq"/>
+                    <constraint firstItem="Tya-C3-WfD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xV7-YE-fEM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="KSearchBtn" destination="Tya-C3-WfD" id="8Rf-Cd-rWT"/>
+                <outlet property="KText" destination="reQ-68-bGt" id="seX-PI-H2u"/>
+                <outlet property="kWidth" destination="Akd-fT-xP8" id="xFB-6G-2HP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="搜索 (1).png" width="20" height="20"/>
+    </resources>
+</document>
